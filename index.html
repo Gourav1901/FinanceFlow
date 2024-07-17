@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceFlow</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .guide-section {
+            position: relative;
+            
+            text-align: center;
+        }
+        .guide-section h1 {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 3rem;
+        }
+        .guide-section p {
+            margin-bottom: 20px;
+            font-weight: 600; 
+            font-size: 1rem;
+            max-width: 400px; 
+            margin: 0 auto;
+        }
+        .guide-section .btn-outline-dark {
+            margin: 0 5px;
+            transition: background-color 1s, color 1s;
+        }
+        .guide-section .btn-outline-dark:hover {
+            background-color: #343a40;
+            color: white;
+        }
+        .guide-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .guide-card {
+            position: relative;
+            margin: 0 -15px;
+            transition: transform 0.3s;
+            z-index: 1;
+        }
+        .guide-card img {
+            background-color: rgb(254, 234, 209);
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            height: 300px;
+            width: 230px;
+        }
+
+        .guide-card:nth-child(1) {
+            transform: rotate(2deg);
+        }
+        .guide-card:nth-child(2) {
+            transform: rotate(-2deg);
+        }
+        .guide-card:nth-child(3) {
+            transform: rotate(2deg);
+        }
+        .guide-card:nth-child(4) {
+            transform: rotate(-2deg);
+        }
+        .guide-card:nth-child(5) {
+            transform: rotate(2deg);
+        }
+        .guide-card:nth-child(6) {
+            transform: rotate(-2deg);
+        }
+        
+        .guide-card:hover {
+            transform: scale(1.1);
+            z-index: 2;
+        }
+        .guide-card a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .guide-card a:hover {
+            text-decoration: underline;
+        }
+
+        .btn{
+            border-radius: 20px;
+        }
+
+        .btn-success {
+            background-color: rgb(4, 79, 48);
+            border-color: rgb(4, 79, 48);
+            transition: background-color 1s, border-color 1s, color 1s;
+        }
+
+        .btn-success:hover {
+            background-color: rgb(218, 255, 224);
+            border-color: rgb(218, 255, 224);
+            color: rgb(4, 79, 48);
+        }
+
+        .membership{
+            margin-top: 200px;
+            background: linear-gradient(to bottom, #a1d3ea , #f8fcff);
+            
+            border-radius:30px;
+            
+        }
+
+        .membership h1{
+            padding-top: 100px;
+            margin-bottom: 20px;
+            font-weight: 500; 
+            font-size:120px;
+            color: white;
+            line-height: 1;
+        }
+
+        
+
+        #h1-mid{
+            font-weight: 600; 
+            font-size: 3rem;
+            max-width: 900px; 
+            margin: 0 auto;
+        }
+
+
+
+        .parent{
+            font-family: Arial, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+        }
+        .benefits {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+        }
+        .benefits-text {
+            
+            max-width: 350px;
+            
+            padding-right: 2rem;
+        }
+        
+        .benefits-text h2 {
+            font-size: 25px;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        .benefits-text ul {
+            
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        .benefits-text ul li {
+            font-size: 16px;
+            
+            margin-bottom: 0.75rem;
+        }
+        
+        .benefits-card {
+            position: relative;
+            height: 380px;
+            width: 350px;
+            
+            text-align: center;
+        }
+
+        .benefits-card {
+            position: relative;
+            background-color: #007bff;
+            transition: transform 0.5s ease-out; 
+        }
+
+        .benefits-card:hover {
+            transform: translateY(10px);
+            transform: translateY(-10px);  
+        }
+
+        .benefits-card img {
+            border-radius: 5px;
+            
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+        }
+        .chat-box {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-150%);
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px;
+            padding: 0px 0px;
+            
+        }
+
+        
+        .chat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+            
+        }
+
+        .chat.div{
+            margin: 0px -20px;
+        }
+
+        #durriya-p{
+            padding:5px 0px ;
+            margin: 0px 0px;
+            font-size: 10px;
+            
+        }
+        .chat img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 1rem;
+        }
+
+        #Goal-created-chat{
+            position: absolute;
+            top: 0;
+            left: 50%; 
+            padding: 0px 10px;
+            transform: translateY(350%);
+
+            background-color: #4c4c4c;
+            color: #fff;  
+        }
+
+        #Durriya-img{
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 1rem;
+        }
+        
+
+        .msg {
+            border-radius: 1.5rem;
+            padding: 0.75rem 1rem;
+            display: inline-block;
+            margin: 0.5rem 0;
+            width: 17em;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        .msg.blue {
+            background-color:#2e7fff;
+            color: #fff;
+        }
+        .msg.gray {
+            background-color: #bdbdbd;
+            color: #fff;
+        }
+        
+             
+        #membership2-h1{
+            font-weight: 600; 
+            font-size: 2rem;
+            max-width: 270px; 
+            margin: 0 auto;
+        }
+
+        #membership2-p{
+            
+            font-weight: 200; 
+            font-size: 1rem;
+            max-width: 270px; 
+            margin: 0 auto;
+        }
+
+        .content {
+            text-align: center;
+        }
+        .circle-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto; /* Center horizontally */
+        }
+        .circle-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+<div class="container guide-section">
+    <h1>Guides that help you grow</h1>
+    <p>Talk to someone who understands you and your money. Make progress and feel empowered.</p>
+    <div class="d-flex justify-content-center mb-5 flex-wrap mt-2">
+        <button class="btn btn-outline-dark my-2 " style="font-size: 15px; padding: 10px 27px;">How it works</button>
+        <button class="btn btn-outline-dark  my-2" style="font-size: 15px; padding: 10px 27px;">Who are Guides</button>
+    </div>
+    <div class="guide-cards">
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/66018fb1ba04c4ced64004a6_20240325_Fruitful_Guide_Headshot_Andrea-p-500.png" alt="Andrea">
+            
+        </div>
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/65cf43738d5103f7a55ba9d1_guide_headshot_andrew_FEE9D1-p-500.png" alt="Andrew">
+            
+        </div>
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/66018c0620ee3d30a2c417c7_20240325_Fruitful_Guide_Headshot_Bri-p-500.png" alt="Bri">
+            
+        </div>
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/660196bb99f851d6a36f5df4_20240325_Fruitful_Guide_Headshot_Matt-p-500.png" alt="matt">
+            
+        </div>
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/661f0f3359c8b887ad549738_20240305_FF_guide_headshot_mckenna_FEE9D1-p-500.png" alt="Mckenna">
+            
+        </div>
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/65e74efba487812a0c399d5f_Raquel%20headshot-p-500.png" alt="Raquel">
+            
+        </div>
+    </div>
+    <button class="btn btn-success mt-5" style="font-size: 15px; padding: 12px 27px;">Choose your Guide</button>
+
+
+    <div class="membership  ">
+        <h1 >Membership Benefits</h1>
+
+        <div class="parent">
+            <div class="benefits">
+                <div class="benefits-text">
+                    <h4>Guidance</h4>
+                    <h2>Talk to a human. An expert. A Fruitful Guide.</h2>
+                    <ul>
+                        <li>Dedicated advice and support on all aspects of your finances from a Fruitful Guide.</li>
+                        <li>1-to-1 video sessions focused on organizing your finances, building wealth, and making real progress.</li>
+                        <li>Ongoing progress check-ins, quick syncs, and anytime messaging.</li>
+                        <li>A clear blueprint to hit your goals with simple steps that your Guide helps you implement.</li>
+                    </ul>
+                    <button class="btn btn-success mt-5 px-5 py-2">Tell me more</button>
+                </div>
+                <div class="benefits-card" style="position: relative;">
+                    <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65cf93712db11ffcec514942_Durriya%20headshot-p-500.webp" alt="Guide Image">
+                    <div class="chat-box">
+                        <div class="chat">
+                            
+                            <div class="msg blue">Hi Durriya – I have questions about saving more each month to possibly buy a home in 3-4 years.</div>
+                            <div>
+                                <img src="./assets/Misha-small.webp" alt="Misha">
+                                <p>Misha</p>
+                            </div>
+                        </div>
+                        <div class="chat">
+                            
+                            <div class="msg gray">Let's talk! I'll look at your financial profile and book a quick sync to chat strategy.</div>
+                            <div>
+                                <img src="./assets/Durriya-small.webp" alt="Durriya">
+                                <p>Durriya</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="msg brown" id="Goal-created-chat" style="text-align: left; display: flex; width: 20em; align-items: center;" ><img src="./assets/Durriya-small.webp" alt="chat-img" id="Durriya-img"><p id="durriya-p">New Goal Created</br>30 minutes until your session on Buying a home with Durriya</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="benefits">
+                <div class="benefits-text">
+                    <h4>Guidance</h4>
+                    <h2>Talk to a human. An expert. A Fruitful Guide.</h2>
+                    <ul>
+                        <li>Dedicated advice and support on all aspects of your finances from a Fruitful Guide.</li>
+                        <li>1-to-1 video sessions focused on organizing your finances, building wealth, and making real progress.</li>
+                        <li>Ongoing progress check-ins, quick syncs, and anytime messaging.</li>
+                        <li>A clear blueprint to hit your goals with simple steps that your Guide helps you implement.</li>
+                    </ul>
+                    <button class="btn btn-success mt-5 px-5 py-2">Tell me more</button>
+                </div>
+                <div class="benefits-card" style="position: relative;">
+                    <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65cf93712db11ffcec514942_Durriya%20headshot-p-500.webp" alt="Guide Image">
+                    <div class="chat-box">
+                        <div class="chat">
+                            
+                            <div class="msg blue">Hi Durriya – I have questions about saving more each month to possibly buy a home in 3-4 years.</div>
+                            <div>
+                                <img src="./assets/Misha-small.webp" alt="Misha">
+                                <p>Misha</p>
+                            </div>
+                        </div>
+                        <div class="chat">
+                            
+                            <div class="msg gray">Let's talk! I'll look at your financial profile and book a quick sync to chat strategy.</div>
+                            <div>
+                                <img src="./assets/Durriya-small.webp" alt="Durriya">
+                                <p>Durriya</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="msg brown" id="Goal-created-chat" style="text-align: left; display: flex; width: 20em; align-items: center;" ><img src="./assets/Durriya-small.webp" alt="chat-img" id="Durriya-img"><p id="durriya-p">New Goal Created</br>30 minutes until your session on Buying a home with Durriya</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="parent" >
+            <div class="benefits">
+                <div class="benefits-text">
+                    <h4>Guidance</h4>
+                    <h2>Talk to a human. An expert. A Fruitful Guide.</h2>
+                    <ul>
+                        <li>Dedicated advice and support on all aspects of your finances from a Fruitful Guide.</li>
+                        <li>1-to-1 video sessions focused on organizing your finances, building wealth, and making real progress.</li>
+                        <li>Ongoing progress check-ins, quick syncs, and anytime messaging.</li>
+                        <li>A clear blueprint to hit your goals with simple steps that your Guide helps you implement.</li>
+                    </ul>
+                    <button class="btn btn-success mt-5 px-5 py-2">Tell me more</button>
+                </div>
+                <div class="benefits-card" style="position: relative;">
+                    <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65cf93712db11ffcec514942_Durriya%20headshot-p-500.webp" alt="Guide Image">
+                    <div class="chat-box">
+                        <div class="chat">
+                            
+                            <div class="msg blue">Hi Durriya – I have questions about saving more each month to possibly buy a home in 3-4 years.</div>
+                            <div>
+                                <img src="./assets/Misha-small.webp" alt="Misha">
+                                <p>Misha</p>
+                            </div>
+                        </div>
+                        <div class="chat">
+                            
+                            <div class="msg gray">Let's talk! I'll look at your financial profile and book a quick sync to chat strategy.</div>
+                            <div>
+                                <img src="./assets/Durriya-small.webp" alt="Durriya">
+                                <p>Durriya</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="msg brown" id="Goal-created-chat" style="text-align: left; display: flex; width: 20em; align-items: center;" ><img src="./assets/Durriya-small.webp" alt="chat-img" id="Durriya-img"><p id="durriya-p">New Goal Created</br>30 minutes until your session on Buying a home with Durriya</p></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <h1 id="h1-mid" class="mx-5 my-5">“More than just feeling less stressed about my finances, I feel a lot more in control of my life!”</h1>
+
+    <div class="content">
+        <div class="circle-image">
+            <img src="./assets/Maya-medium.jpg" alt="Circle Image">
+        </div>
+        <h1>Maya    </h1>
+        <p>Real Fruitful Member</p>
+    </div>
+    
+    <h1 id="membership2-h1" style="margin-top: 100px;">Our members make moves</h1>
+    <p id="membership2-p" style="margin-top: 25px; margin-bottom: 100px;">Hear inspiring stories from real members making real progress.</p>
+
+
+    <div class="guide-cards">
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/65e784bd98f9be082af9e213_20240305_Fruitful_Member_Card_Daniela.jpg" alt="Andrea">
+            
+        </div>
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/65e784d1fff31f65db07e0cf_20240305_Fruitful_Member_Card_Sharise.jpg" alt="Andrew">
+            
+        </div>
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/65e784e49c73a7a49a770104_20240305_Fruitful_Member_Card_Misha.jpg" alt="Bri">
+            
+        </div>
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/65e8c8ae9bad1a2aa9429dbd_20240306_Fruitful_Member_Card_Steph.jpg" alt="matt">
+            
+        </div>
+        <div class="guide-card">
+            <img src="https://cdn.prod.website-files.com/65b22d2d8aafb9c10048b930/65e78502b3c4c39578e40a5b_20240305_Fruitful_Member_Card_Maya.jpg" alt="Mckenna">
+            
+        </div>
+        
+            
+    </div>
+
+    
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
