@@ -174,11 +174,12 @@ body {
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  
   position: absolute; /* Change to absolute for precise placement */
   top: 25%;
-  left: 0px;
-  width: 30%;
+  left: 30px;
+  text-align: left;
+  width: 400px;
   /* transform: translate(-50%, -50%);  */
   
   color: white; /* Ensure text color is visible against the background */
@@ -186,14 +187,15 @@ body {
 
 .hero-content button{
   padding: 9px 18px;
+  margin-top: 20px;
 }
 
 #video-heading {
   font-size: 80px;
   font-weight: 400; 
   margin: 0;
-  width: 100%;
-  font-family: "Roboto", sans-serif;
+  /* width: 100%; */
+  
 }
 
 .hero-content p {
@@ -256,17 +258,24 @@ body {
 
 #hero-bottom{
  position: absolute;
- top: 91.5%;
+ top: 45em;
  width: 100%;
  font-size: 16px;
  text-align: center;
-
- height: 65px;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ height: 5em;
  color: #054F31;
  padding: 0px 30px;
- 
-
  background-color: #D9FFE0;
+}
+
+#hero-bottom>h5{
+  padding-top: 10px;
+}
+
+#hero-bottom>p{
+  max-width: 50em;
 }
 
 #heading-main{
