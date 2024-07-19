@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinanceFlow</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <style>
@@ -673,6 +674,79 @@
 
 
         </div>
+        <div class="plans">
+            <h3>Fruitful Membership</h3> 
+            <div id="top">
+             <p>Membership is risk-free for 30 days
+                 <span class="tooltip"><span class="material-symbols-outlined">info</span>
+                     <span class="tooltiptext">Try Fruitful for 30 days! Not your thing? Get a full refund. No fuss.</span>
+                 </span>
+             </p>
+             <div id="buttons">
+                 <button id="solo">Solo<br> <span style="font-size: 12px;">For just you</span></button>
+                 <button id="joint">Joint<br> <span style="font-size: 12px;">For you and your partner</span></button>
+            </div>
+         </div>
+         <div class="cards" id="solo-cards">
+             <div class="card">
+                 <h4 class="price-container"><sup>$</sup><span id="price">98</span> <sub id="period">/ month</sub> </h4>
+                 <p>Monthly</p>
+                 <p id="offer">$98 paid every month.</p>
+                 <button>Start with monthly</button>
+             </div>
+             <div class="card">
+                 <h4 class="price-container"><sup>$</sup><span id="price">92</span> <sub id="period">/ month</sub> </h4>
+                 <p>Quarterly</p>
+                 <p id="offer">$275 paid every 3 months.</p>
+                 <button>Start with quarterly</button>
+             </div>
+             <div class="card">
+                 <h4 class="price-container"><sup>$</sup><span id="price">83</span> <sub id="period">/ month</sub> </h4>
+                 <p>Annually</p>
+                 <p id="offer">$998 paid every year.</p>
+                 <button>Start with annually</button>
+             </div>
+         </div>
+         <div class="cards" id="joint-cards" style="display: none;">
+             <div class="card">
+                 <h4 class="price-container"><sup>$</sup><span id="price">148</span> <sub id="period">/ month</sub> </h4>
+                 <p>Monthly</p>
+                 <p id="offer">$148 paid every month.</p>
+                 <button>Start with monthly</button>
+             </div>
+             <div class="card">
+                 <h4 class="price-container"><sup>$</sup><span id="price">138</span> <sub id="period">/ month</sub> </h4>
+                 <p>Quarterly</p>
+                 <p id="offer">$415 paid every 3 months.</p>
+                 <button>Start with quarterly</button>
+             </div>
+             <div class="card">
+                 <h4 class="price-container"><sup>$</sup><span id="price">125</span> <sub id="period">/ month</sub> </h4>
+                 <p>Annually</p>
+                 <p id="offer">$1,498 paid every year.</p>
+                 <button>Start with annually</button>
+             </div>
+         </div>
+         
+         <div class="lower">
+             <p id="head">All plans provide access to</p>
+             <div id="features">
+                 <p><span class="material-symbols-outlined">check_circle</span>Expert advice and support from your dedicated Guide, a CFP® Professional</p>
+                 <p><span class="material-symbols-outlined">check_circle</span>5.00% APY High Yield Savings Account, more than 10x the national average*</p>
+                 <p><span class="material-symbols-outlined">check_circle</span>1-to-1 video sessions focused on hitting your goals with progress check-ins, quick syncs and anytime messaging</p>
+                 <p><span class="material-symbols-outlined">check_circle</span>Tailored investment portfolios with expert support at every step and no <br> management fees</p>
+             </div>
+         </div>
+         <script>
+             document.getElementById('solo').addEventListener('click', function() {
+                 document.getElementById('solo-cards').style.display = 'flex';
+                 document.getElementById('joint-cards').style.display = 'none';
+             });
+             document.getElementById('joint').addEventListener('click', function() {
+                 document.getElementById('solo-cards').style.display = 'none';
+                 document.getElementById('joint-cards').style.display = 'flex';
+             });
+         </script>
 
         <footer class="footer flex">
             <div class="footer_container flex ">
