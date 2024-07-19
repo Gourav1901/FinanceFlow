@@ -182,16 +182,24 @@ body {
   text-align: center;-m
 
 } */
+
+#hero-content-div{
+  display: flex;
+  justify-content: center;
+}
+
 .hero-content {
   display: flex;
   flex-direction: column;
+  justify-content: sta;
   
-  position: absolute; /* Change to absolute for precise placement */
+  
+  /* position: absolute;  */
   top: 25%;
   left: 30px;
   text-align: left;
   width: 400px;
-  /* transform: translate(-50%, -50%);  */
+  
   
   color: white; /* Ensure text color is visible against the background */
 }
@@ -212,7 +220,7 @@ body {
 
 .hero-content p {
   font-size: 23px; /* Adjust font size for the paragraph */
-  margin: 10px 0 0;
+  margin: 10px 0;
   width: 100%;
   font-family: "Roboto", sans-serif;
 }
