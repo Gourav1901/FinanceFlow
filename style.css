@@ -82,8 +82,6 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
-
- 
 }
 
 .toggle-dropdown {
@@ -301,72 +299,43 @@ body {
 
 /*surya code starts here */
 @import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
-        .plans{
-            width: 1320px;
-            height: 890px;
-            margin: auto;
-        }
-        .plans h3{
-            text-align: center;
-            font-size: 35px;
+
+        #heading{
+          margin-top: 100px;
+          text-align: center;
+          font-size: 35px;
+          font-family: 'PP Neue Montreal', sans-serif;
         }
         #top {
             width: 420px;
             height: 98px;
             margin: auto;
         }
-        #top p{
+        #p1{
             text-align: center;
             font-size: 14px;
             margin: 5px 0px 18px;
+            font-family: 'PP Neue Montreal', sans-serif;
         }
-        #buttons {
+        #plan-buttons {
             display: flex;
             justify-content: center;
             gap: 14px;
         }
-        #buttons button{
+        #plan-buttons button{
             width: 200px;
             padding: 8px 24px 10px 24px;
             border-radius: 20px;
-            height: 57px;
             border: 1px solid black;
             background-color: white;
             font-size: 16px;
         }
-        #buttons button:hover{
+        #plan-buttons button:hover{
             background-color: black;
             color: white;
             cursor: pointer;
         }
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            margin-left: 5px;
-        }
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 380px;
-            background-color: white;
-            color: black;
-            text-align: left;
-            border-radius: 10px;
-            padding: 16px;
-            position: absolute;
-            z-index: 1;
-            left: 100%; 
-            top: 50%;
-            transform: translateY(-20%);
-            opacity: 0;
-            transition: opacity 0.3s;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        }
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
-        .cards {
+        #solo-cards{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -374,13 +343,16 @@ body {
             position: relative;
             margin: 72px 0px;
         }
-        .card {
+        #joint-cards{
+          margin: 72px 0px;
+        }
+        .plan-card {
             position: relative;
             margin: 0 15px;
             transition: transform 0.3s;
             z-index: 1;
         }
-        .card{
+        .plan-card{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -392,27 +364,28 @@ body {
             width: 375px;
             border-radius: 25px;
             text-align: center;
+            
         }
-        .card:nth-child(1) {
+        .plan-card:nth-child(1) {
             transform: rotate(-2deg);
         }
-        .card:nth-child(2) {
+        .plan-card:nth-child(2) {
             transform: rotate(0deg);
         }
-        .card:nth-child(3) {
+        .plan-card:nth-child(3) {
             transform: rotate(2deg);
         }
-        .card:nth-child(2):hover {
+        .plan-card:nth-child(2):hover {
             transform: scale(1.1);
             z-index: 2;
             background-color: #feead1;
         }
-        .card:hover {
+        .plan-card:hover {
             transform: scale(1.1);
             z-index: 2;
             background-color: #feead1;
         }
-        .card button {
+        .plan-card button {
             width: 320px;
             height: 50px;
             padding: 8px;
@@ -424,7 +397,7 @@ body {
             margin-top: 50px;
             background-color: white;
         }
-        .card button:hover {
+        .plan-card button:hover {
             background-color: #054f2e;
             color: white;
         }
@@ -432,6 +405,7 @@ body {
             width: 684px;
             height: 200px;
             margin: auto;
+            margin-bottom: 50px;
         }
         #head{
             text-align: center;
@@ -452,8 +426,9 @@ body {
             font-size: 80px;
             color: #054f2e;
             margin-left: 35px;
+            font-weight: bolder;
         }
-        .card>p{
+        #p2{
             font-size: 22px;
             color: #054f2e;
             font-weight: bolder;
@@ -470,14 +445,21 @@ body {
         
         .price-container sup {
             position: absolute;
-            top: 5px; 
-            left: 15px; 
+            top: 20px; 
+            left: 20px; 
             font-size: 26px; 
             color: #054f2e;
+            font-weight: 700;
         }
         #period{
             font-size: 12px;
             color: #054f2e;
             font-weight: 500;
         }
+        #para{
+          width: 540px;
+          height: 40px;
+          margin: auto;
+        }
+        
 /* surya code ends here */
