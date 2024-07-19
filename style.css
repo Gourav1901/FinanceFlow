@@ -194,7 +194,7 @@ body {
   justify-content: sta;
   
   
-  /* position: absolute;  */
+  position: absolute; 
   top: 25%;
   left: 30px;
   text-align: left;
