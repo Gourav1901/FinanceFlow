@@ -8,14 +8,14 @@ body {
   box-sizing: border-box;
 }
 div.container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: auto;
 }
 
 /* Hero Section */
 #hero {
   position: relative;
-  height: 45rem;
+  height: 50rem;
   color: white;
   text-align: center;
 }
@@ -25,7 +25,7 @@ div.container {
   top: 0;
   left: 0;
   width: 100%;
-  height: 38.5rem;
+  height: 41.2rem;
   overflow: hidden;
   z-index: -1;
 }
@@ -45,6 +45,7 @@ div.container {
   top: 0;
   left: 0;
   z-index: 1;
+  margin-top: -20px;
 }
 
 #auth-buttons {
@@ -61,6 +62,10 @@ div.container {
   font-size: 54px;
   font-weight: bold;
   color: white;
+
+}
+#logo img{
+  height: 120px;
 }
 
 #nav-links {
@@ -77,10 +82,11 @@ div.container {
   /* background-color: rgba(211, 203, 192, 0.8); */
   background-color: rgba(0,0,0,0.2);
   backdrop-filter: blur(5px);
-  padding: 10px 5px;
+  padding: 9px 5px;
   border-radius: 15px;
   color: white;
   position: relative;
+  
 }
 
 /* Dropdown Styles */
@@ -109,7 +115,7 @@ div.container {
   margin-left: 30px;
 }
 
-.arrow {
+.ar {
   margin-left: 8px;
   transition: transform 0.3s ease;
 }
@@ -190,20 +196,20 @@ div.container {
 .hero-content {
   display: flex;
   flex-direction: column;
-  justify-content: sta;
+  justify-content: start;
 
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 30px;
   text-align: left;
-  width: 400px;
-
+  width: 450px;
+  
   color: white; /* Ensure text color is visible against the background */
 }
 
 .hero-content button {
-  padding: 9px 18px;
-  margin-top: 20px;
+  padding: 9px 27px;
+  margin-top: 15px;
 }
 
 #video-heading {
@@ -268,7 +274,7 @@ div.container {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 34em;
+  top: 36.5em;
   width: 100%;
   font-size: 16px;
   text-align: center;
@@ -311,11 +317,9 @@ div.container {
   
   width: auto;
 }
-
 #text-section p{
-  font-size: 18px; 
-  line-height: 5px;
-  
+  font-weight: 100;
+   
   
 }
 
