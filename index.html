@@ -142,7 +142,7 @@
             line-height: 1;
         }
 
-        #h1-mid-div{
+        #h1-mid-div {
             display: flex;
             justify-content: center;
         }
@@ -152,7 +152,7 @@
             font-weight: 600;
             font-size: 3rem;
             max-width: 900px;
-            
+
         }
 
 
@@ -354,6 +354,263 @@
             margin-top: 10px;
             font-size: 1rem;
         }
+
+        /*surya code start*/
+        .plans-sai h3 {
+            text-align: center;
+            font-size: 35px;
+            font-family: 'PP Neue Montreal', sans-serif;
+        }
+
+        #top {
+            width: 420px;
+            height: 98px;
+            margin: auto;
+        }
+
+        #top p {
+            text-align: center;
+            font-size: 14px;
+            margin: 5px 0px 18px;
+            font-family: 'PP Neue Montreal', sans-serif;
+        }
+
+        #buttons-sai {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        #buttons-sai button {
+            width: 200px;
+            padding: 8px 24px 10px 24px;
+            border-radius: 20px;
+            height: 57px;
+            border: 1px solid black;
+            background-color: white;
+            font-size: 16px;
+            font-family: 'PP Neue Montreal', sans-serif;
+        }
+
+        #buttons-sai button:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .tooltip-sai {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .tooltip-sai .tooltiptext {
+            visibility: hidden;
+            width: 380px;
+            background-color: white;
+            color: black;
+            text-align: left;
+            border-radius: 10px;
+            padding: 16px;
+            position: absolute;
+            z-index: 1;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-20%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .tooltip-sai:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .cards-sai {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+            margin: 72px 0px;
+        }
+
+        .card-sai {
+            position: relative;
+            margin: 0 15px;
+            transition: transform 0.3s;
+            z-index: 1;
+        }
+
+        .card-sai {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            height: 330px;
+            width: 375px;
+            border-radius: 25px;
+            text-align: center;
+            font-family: 'PP Neue Montreal', sans-serif;
+        }
+
+        .card-sai:nth-child(1) {
+            margin-top: 20px;
+            transform: rotate(-2deg);
+        }
+
+        .card-sai:nth-child(2) {
+            transform: rotate(0deg);
+        }
+
+        .card-sai:nth-child(3) {
+            margin-top: 20px;
+            transform: rotate(2deg);
+        }
+
+        .card-sai:nth-child(2):hover {
+            transform: scale(1.1);
+            z-index: 2;
+            background-color: #feead1;
+        }
+
+        .card-sai:hover {
+            transform: scale(1.1);
+            z-index: 2;
+            background-color: #feead1;
+        }
+
+        .card-sai button {
+            width: 320px;
+            padding: 8px;
+            border: 1px solid #054f2e;
+            border-radius: 20px;
+            color: #054f2e;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 50px;
+            background-color: white;
+        }
+
+        .card-sai button:hover {
+            background-color: #054f2e;
+            color: white;
+        }
+
+        .lower-sai {
+            width: 684px;
+            height: 200px;
+            margin: auto;
+            font-family: 'PP Neue Montreal', sans-serif;
+            margin-bottom: 100px;
+        }
+
+        #head-low {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        #features-sai {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        #features-sai p {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        #price {
+            font-size: 80px;
+            color: #054f2e;
+            font-family: 'PP Neue Montreal', sans-serif;
+        }
+
+        .card-sai>p {
+            font-size: 22px;
+            color: #054f2e;
+            font-weight: bolder;
+            font-family: 'PP Neue Montreal', sans-serif;
+        }
+
+        #offer-sai {
+            font-size: 12px;
+            color: #054f2e;
+            font-weight: 500;
+            font-family: 'PP Neue Montreal', sans-serif;
+            margin: 0px;
+        }
+
+        .price-container-sai {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+        }
+
+        #symbol-sai sup {
+            position: absolute;
+            top: 5px;
+            left: 45px;
+            font-size: 26px;
+            color: #054f2e;
+        }
+
+        #period-sai {
+            font-size: 12px;
+            color: #054f2e;
+            font-weight: 500;
+            margin-top: 50px;
+        }
+
+        .material-symbols-outlined#c1 {
+            color: rgb(23, 154, 102);
+            margin: 0px 5px 25px;
+            font-size: 20px;
+        }
+
+        .material-symbols-outlined#c2 {
+            color: rgb(23, 154, 102);
+            margin: 0px 5px 25px;
+            font-size: 20px;
+        }
+
+        .material-symbols-outlined#c3 {
+            color: rgb(23, 154, 102);
+            margin: 0px 5px 48px;
+            font-size: 20px;
+        }
+
+        .material-symbols-outlined#c4 {
+            color: rgb(23, 154, 102);
+            margin: 0px 5px 48px;
+            font-size: 20px;
+        }
+
+        #para-sai {
+            font-size: 18px;
+            margin: auto;
+            color: rgb(91, 97, 107);
+        }
+
+        .material-symbols-outlined#info {
+            font-size: 16px;
+            margin-left: -5px;
+        }
+
+        #month {
+            margin: 0px;
+        }
+
+        /*surya code end*/
 
         /* ---------------------------Sushant's Code End--------------------------------------    */
     </style>
@@ -636,7 +893,7 @@
             <h1 id="h1-mid" class="mx-5 my-5">“More than just feeling less stressed about my finances, I feel a lot more
                 in control of my life!”</h1>
         </div>
-            
+
 
         <div class="content">
             <div class="circle-image">
@@ -677,52 +934,57 @@
                     alt="Mckenna">
             </div>
         </div>
-        
-        <p id="para">The people in these videos are real Fruitful Members who were paid in cash for their time and participation in this series. We think that is fair.¹ⓘ</p>
-        
+
+    
+        <p id="para-sai">The people in these videos are real Fruitful Members who were paid in <br> cash for their time
+            and participation in this series. We think that is fair.
+        </p>
         <h3 id="heading">Fruitful Membership</h3>
         <div id="top">
-            <p id="p1">Membership is risk-free for 30 days
+            <p>Membership is risk-free for 30 days
+                <span class="tooltip-sai"><span class="material-symbols-outlined" id="info">info</span>
+                    <span class="tooltiptext">Try Fruitful for 30 days! Not your thing? Get a full refund. No fuss.</span>
+                </span>
             </p>
             <div id="plan-buttons">
                 <button id="solo">Solo<br> <span style="font-size: 12px; margin-top: 0px;">For just you</span></button>
                 <button id="joint">Joint<br> <span style="font-size: 12px;">For you and your partner</span></button>
             </div>
         </div>
-        <div class="cards" id="solo-cards">
-            <div class="plan-card">
+        <div class="cards-sai" id="solo-cards">
+            <div class="card-sai">
                 <h4 class="price-container"><sup>$</sup><span id="price">98</span> <sub id="period">/ month</sub> </h4>
                 <p id="p2">Monthly</p>
                 <p id="offer">$98 paid every month.</p>
                 <button>Start with monthly</button>
             </div>
-            <div class="plan-card">
+            <div class="card-sai">
                 <h4 class="price-container"><sup>$</sup><span id="price">92</span> <sub id="period">/ month</sub> </h4>
                 <p id="p2">Quarterly</p>
                 <p id="offer">$275 paid every 3 months.</p>
                 <button>Start with quarterly</button>
             </div>
-            <div class="plan-card">
+            <div class="card-sai">
                 <h4 class="price-container"><sup>$</sup><span id="price">83</span> <sub id="period">/ month</sub> </h4>
                 <p id="p2">Annually</p>
                 <p id="offer">$998 paid every year.</p>
                 <button>Start with annually</button>
             </div>
         </div>
-        <div class="cards" id="joint-cards" style="display: none;">
-            <div class="plan-card">
+        <div class="cards-sai" id="joint-cards" style="display: none;">
+            <div class="card-sai">
                 <h4 class="price-container"><sup>$</sup><span id="price">148</span> <sub id="period">/ month</sub> </h4>
                 <p id="p2">Monthly</p>
                 <p id="offer">$148 paid every month.</p>
                 <button>Start with monthly</button>
             </div>
-            <div class="plan-card">
+            <div class="card-sai">
                 <h4 class="price-container"><sup>$</sup><span id="price">138</span> <sub id="period">/ month</sub> </h4>
                 <p id="p2">Quarterly</p>
                 <p id="offer">$415 paid every 3 months.</p>
                 <button>Start with quarterly</button>
             </div>
-            <div class="plan-card">
+            <div class="card-sai">
                 <h4 class="price-container"><sup>$</sup><span id="price">125</span> <sub id="period">/ month</sub> </h4>
                 <p id="p2">Annually</p>
                 <p id="offer">$1,498 paid every year.</p>
@@ -730,17 +992,17 @@
             </div>
         </div>
 
-        <div class="lower">
-            <p id="head">All plans provide access to</p>
-            <div id="features">
-                <p><span class="material-symbols-outlined">check_circle</span>Expert advice and support from your
-                    dedicated Guide, a CFP® Professional</p>
-                <p><span class="material-symbols-outlined">check_circle</span>5.00% APY High Yield Savings Account, more
-                    than 10x the national average*</p>
-                <p><span class="material-symbols-outlined">check_circle</span>1-to-1 video sessions focused on hitting
-                    your goals with progress check-ins, quick syncs and anytime messaging</p>
-                <p><span class="material-symbols-outlined">check_circle</span>Tailored investment portfolios with expert
-                    support at every step and no <br> management fees</p>
+        <div class="lower-sai">
+            <p id="head-low">All plans provide access to</p>
+            <div id="features-sai">
+                <p><span class="material-symbols-outlined" id="c1">check_circle</span> Expert advice and support from
+                    your dedicated Guide, a CFP® Professional</p>
+                <p><span class="material-symbols-outlined" id="c2">check_circle</span>5.00% APY High Yield Savings
+                    Account, more than 10x the national average*</p>
+                <p><span class="material-symbols-outlined" id="c3">check_circle</span>1-to-1 video sessions focused on
+                    hitting your goals with progress check-ins, quick syncs and anytime messaging</p>
+                <p><span class="material-symbols-outlined" id="c4">check_circle</span>Tailored investment portfolios
+                    with expert support at every step and no <br> management fees</p>
             </div>
         </div>
         <script>
