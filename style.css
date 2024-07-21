@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 div.container {
   max-width: 1400px;
@@ -317,41 +318,149 @@ div.container {
   
   width: auto;
 }
-#text-section p{
-  font-weight: 100;
-   
-  
-}
 
-.split-picture{
-  margin-top: 40px;
+
+
+.flex-v {
   display: flex;
-  /* justify-content: space-between; */
-  gap: 20px;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+  gap: 10px;
+}
+
+.a--center {
+  align-items: center;
+}
+
+.gap--small {
+  gap: 10px;
+}
+
+.h-med {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0;
+}
+
+.line {
+  display: block;
+  text-align: center;
   width: 100%;
-  transition: all 0.5s ease;
-  
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.p-wrap {
+  /* margin-top: -46px; */
+  max-width: 400px;
+}
+
+.p-med {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 
-.split-picture img{
-  height: 467px;
-  width: 1000px;
-  /* border: 1px solid red; */
-  border-radius: 20px;
-  transition: width 0.5s ease;
+.hover-card__wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.hover-card-inner {
+  position: relative;
+  overflow: hidden;
+  width: 45vw;
+
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.hover-card-bg img, .hover-card-bg video {
+  width: 650px;
+  height: 470px;
+  display: block;
+}
+
+.hover-card-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
   object-fit: cover;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: none;
+}
+
+.hover-card-inner:hover .hover-card-bg video {
+  display: block;
+}
+
+.hover-card__grad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+
+.hover-card__info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  color: #fff;
+}
+
+.hover-card__title {
+  margin: 0;
+  font-size: 24px;
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.hover-card__p {
+  width: 100%;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.hover-card__info p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-card-inner:hover .hover-card__p {
+  height: auto;
+}
+
+.hover-card-inner:hover .hover-card__info p {
+  opacity: 1;
+
 }
 
 
-.split-picture img:hover {
-  width: 700px; /* Expand to 68% on hover */
+.cursor-dot{
+  width:5px;
+  height: 5px;
+  background-color: black;
 }
 
-.split-picture img:not(:hover) {
-  width: 400px /* Contract the other image */
+.cursor-outline{
+width: 30px;
+height: 30px;
+border: 2px solid hsla(0, 0%, 3%, 0.5);
+
+}
+
+.cursor-dot, .cursor-outline{
+  position: fixed;
+  top: 0;
+  left:0;
+  transform:translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
 }
