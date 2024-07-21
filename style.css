@@ -352,6 +352,171 @@ div.container {
   width: 700px; /* Expand to 68% on hover */
 }
 
-.split-picture img:not(:hover) {
-  width: 400px /* Contract the other image */
-}
+
+/*surya code starts here */
+@import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
+
+        #heading{
+          margin-top: 150px;
+          text-align: center;
+          font-size: 35px;
+          font-family: 'PP Neue Montreal', sans-serif;
+        }
+        #top {
+            width: 420px;
+            height: 98px;
+            margin: auto;
+        }
+        #p1{
+            text-align: center;
+            font-size: 14px;
+            margin: 5px 0px 18px;
+            font-family: 'PP Neue Montreal', sans-serif;
+        }
+        #plan-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+        }
+        #plan-buttons button{
+            width: 200px;
+            padding: 8px 24px 10px 24px;
+            border-radius: 20px;
+            border: 1px solid black;
+            background-color: white;
+            font-size: 16px;
+        }
+        #plan-buttons button:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        #solo-cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+            margin: 72px 0px;
+        }
+        #joint-cards{
+          margin: 72px 0px;
+        }
+        .plan-card {
+            position: relative;
+            margin: 0 15px;
+            transition: transform 0.3s;
+            z-index: 1;
+        }
+        .plan-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            height: 330px;
+            width: 375px;
+            border-radius: 25px;
+            text-align: center;
+            
+        }
+        .plan-card:nth-child(1) {
+            transform: rotate(-2deg);
+        }
+        .plan-card:nth-child(2) {
+            transform: rotate(0deg);
+        }
+        .plan-card:nth-child(3) {
+            transform: rotate(2deg);
+        }
+        .plan-card:nth-child(2):hover {
+            transform: scale(1.1);
+            z-index: 2;
+            background-color: #feead1;
+        }
+        .plan-card:hover {
+            transform: scale(1.1);
+            z-index: 2;
+            background-color: #feead1;
+        }
+        .plan-card button {
+            width: 320px;
+            height: 50px;
+            padding: 8px;
+            border: 1px solid #054f2e;
+            border-radius: 20px;
+            color: #054f2e;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 50px;
+            background-color: white;
+        }
+        .plan-card button:hover {
+            background-color: #054f2e;
+            color: white;
+        }
+        .lower{
+            width: 684px;
+            height: 200px;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        #head{
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+        #features{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        #features p {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        #price{
+            font-size: 80px;
+            color: #054f2e;
+            margin-left: 35px;
+            font-weight: bolder;
+        }
+        #p2{
+            font-size: 22px;
+            color: #054f2e;
+            font-weight: bolder;
+        }
+        #offer{
+            font-size: 12px;
+            color: #054f2e;
+            font-weight: 500;
+        }
+        .price-container {
+            position: relative;
+            display: inline-block; 
+        }
+        
+        .price-container sup {
+            position: absolute;
+            top: 20px; 
+            left: 20px; 
+            font-size: 26px; 
+            color: #054f2e;
+            font-weight: 700;
+        }
+        #period{
+            font-size: 12px;
+            color: #054f2e;
+            font-weight: 500;
+        }
+        #para{
+          width: 540px;
+          height: 40px;
+          margin: auto;
+          margin-top: 50px;
+        }
+        
+/* surya code ends here */
