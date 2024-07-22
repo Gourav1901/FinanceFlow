@@ -9,7 +9,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
+    
     <style>
         /* ---------------------------Sushant's Code--------------------------------------    */
         .guide-section {
@@ -232,6 +232,21 @@
             object-fit: cover;
         }
 
+        .benefits-card-img{
+            border-radius: 5px;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .benefits-card-img3{
+            border-radius: 5px;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+            transform: translateX(-50%);
+        }
+
         .chat-box {
             position: absolute;
             top: 0;
@@ -244,6 +259,28 @@
 
         }
 
+        .img-position{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-100%);
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+
+        .img-position2{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateY(150%);
+            display: flex;
+            flex-direction: column;
+            
+            margin-left: -320px;
+        }
+        
 
         .chat {
             display: flex;
@@ -617,9 +654,13 @@
 
 
 <body> 
-    
-    <!-- <div class="container-fluid guide-section "> -->
-    <div class="container" style="max-width: 1720px;">
+
+    <div style="max-width: 1400px; margin: auto">
+        <!-- Gourav code start from here -->
+        <div class="cursor-outline" data-cursor-dot></div>
+        <div class="cursor-dot" data-cursor-outline></div>
+
+  
         <header id="hero">
             <div id="video-background">
               <video autoplay muted loop>
@@ -715,27 +756,99 @@
             </div>
           </main>
           <section>
-            <div id="text-section">
-              <h3>A partner and a platform that make money simple.</h3>
-              
-              <p>Take control of your finances with expert human
-              help and a single intuitive place to track it all.</p>
-            </div>
-            <div class="split-picture">
-              <img
-                src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65ce3a4b97ada5b53fdc96a9_headshot_rebecca-p-1080.webp"
-                alt=""
-                id="smile-face"
-              />
-    
-              <img
-                src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65ce3a4ba82e6ab1ccfcce2e_partner-progress-p-1080.webp"
-                alt=""
-                id="phone-img"
-              />
-            </div>
+            
+            <div class="flex-v a--center gap--small">
+                <h3 class="h-med">
+                  <div class="line">A partner and a platform that</div>
+                  <div class="line">make money simple.</div>
+                </h3>
+                <div class="p-wrap">
+                  <p class="p-med">
+                    Take control of your finances with expert human help and a single
+                    intuitive place to track it all.
+                  </p>
+                </div>
+              </div>
+      
+              <div class="hover-card__wrap">
+                <a
+                  data-video-hover=""
+                  data-cursor="Choose your Guide"
+                  href="https://my.fruitful.com/sign-up/"
+                  target="_blank"
+                  class="hover-card is--left w-inline-block"
+                >
+                  <div class="hover-card-inner">
+                    <div class="hover-card-bg">
+                      <img
+                        src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65ce3a4b97ada5b53fdc96a9_headshot_rebecca.webp"
+                        loading="lazy"
+                        alt="photo of Rebecca, smiling"
+                        class="cover-img"
+                      />
+                      <video
+                        width="100%"
+                        height="100%"
+                        loop
+                        muted
+                        playsinline
+                        class="bg-video"
+                      >
+                        <source
+                          src="https://d1pwidzl9kib4u.cloudfront.net/marketing/20240305/16x9_Low_Quality_No_Caption/20240306_Fruitfuil_Guide_Compilation_16x9_lo_nocap.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="hover-card__grad"></div>
+                    <div class="hover-card__info">
+                      <h4 class="hover-card__title">Your partner<br />in progress</h4>
+                      <div class="hover-card__p">
+                        <p class="p-reg">
+                          Our Guides are supportive and skilled CFP® Pros. Expect
+                          personalized advice that leads to quick action.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  data-cursor="Get started"
+                  href="https://my.fruitful.com/sign-up/"
+                  target="_blank"
+                  class="hover-card is--right w-inline-block"
+                >
+                  <div class="hover-card-inner">
+                    <div class="hover-card-bg">
+                      <img
+                        src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65ce3a4ba82e6ab1ccfcce2e_partner-progress.webp"
+                        loading="lazy"
+                        alt="photo of an iPhone with the Fruitful app open"
+                        class="cover-img"
+                      />
+                    </div>
+                    <div class="hover-card__grad"></div>
+                    <div class="hover-card__info">
+                      <h4 class="hover-card__title">
+                        Your place for <br />peace of mind
+                      </h4>
+                      <div class="hover-card__p">
+                        <p class="p-reg">
+                          Talk about, track, save, and invest your money all in one
+                          place. Know where you are and love where you're going.<br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            
           </section>
-</div>  <article style="display: flex; justify-content: center;">
+    </div>  
+    <div class="container-fluid guide-section ">
+
+       
+        <article style="display: flex; justify-content: center;">
             <div style="text-align: center;">
                 <h1>Guides that help you grow</h1>
                 <p>Talk to someone who understands you and your money. Make progress and feel empowered.</p>
@@ -794,55 +907,6 @@
             </div>
             
 
-            <!-- <div class="parent">
-                <div class="benefits">
-                    <div class="benefits-text">
-                        <h4>Guidance</h4>
-                        <h2>Talk to a human. An expert. A Fruitful Guide.</h2>
-                        <ul>
-                            <li>Dedicated advice and support on all aspects of your finances from a Fruitful Guide.
-                            </li>
-                            <li>1-to-1 video sessions focused on organizing your finances, building wealth, and
-                                making real progress.</li>
-                            <li>Ongoing progress check-ins, quick syncs, and anytime messaging.</li>
-                            <li>A clear blueprint to hit your goals with simple steps that your Guide helps you
-                                implement.</li>
-                        </ul>
-                        <button class="btn btn-success mt-5 px-5 py-2">Tell me more</button>
-                    </div>
-                    <div class="benefits-card" style="position: relative;">
-                        <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65cf93712db11ffcec514942_Durriya%20headshot-p-500.webp"
-                            alt="Guide Image">
-                        <div class="chat-box">
-                            <div class="chat">
-
-                                <div class="msg blue">Hi Durriya – I have questions about saving more each month to
-                                    possibly buy a home in 3-4 years.</div>
-                                <div>
-                                    <img src="./assets/Misha-small.webp" alt="Misha">
-                                    <p>Misha</p>
-                                </div>
-                            </div>
-                            <div class="chat">
-
-                                <div class="msg gray">Let's talk! I'll look at your financial profile and book a
-                                    quick sync to chat strategy.</div>
-                                <div>
-                                    <img src="./assets/Durriya-small.webp" alt="Durriya">
-                                    <p>Durriya</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="msg brown" id="Goal-created-chat"
-                            style="text-align: left; display: flex; width: 20em; align-items: center;"><img
-                                src="./assets/Durriya-small.webp" alt="chat-img" id="Durriya-img">
-                            <p id="durriya-p">New Goal Created</br>30 minutes until your session on Buying a home
-                                with Durriya</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="parent">
                 <div class="benefits">
                     <div class="benefits-text">
@@ -895,55 +959,57 @@
             <div class="parent">
                 <div class="benefits">
                     <div class="benefits-text">
-                        <h4>Guidance</h4>
-                        <h2>Talk to a human. An expert. A Fruitful Guide.</h2>
+                        <h4>Save</h4>
+                        <h2>Earn 5% on savings set up for your goals.</h2>
                         <ul>
-                            <li>Dedicated advice and support on all aspects of your finances from a Fruitful Guide.
-                            </li>
-                            <li>1-to-1 video sessions focused on organizing your finances, building wealth, and
-                                making real progress.</li>
+                            <li>5.00% APY savings account, more than 10x the national average*.</li>
+                            <li>Dedicated savings spaces for all of your  specific goals.</li>
                             <li>Ongoing progress check-ins, quick syncs, and anytime messaging.</li>
-                            <li>A clear blueprint to hit your goals with simple steps that your Guide helps you
-                                implement.</li>
+                            <li>Automated transfers that power your progress.</li>
                         </ul>
                         <button class="btn btn-success mt-5 px-5 py-2">Tell me more</button>
                     </div>
-                    <div class="benefits-card" style="position: relative;">
-                        <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65cf93712db11ffcec514942_Durriya%20headshot-p-500.webp"
-                            alt="Guide Image">
+                    <div class="benefits-card-img" style="position: relative;">
+                        <img src="./assets/Emergency_funds.svg"
+                            alt="Guide Image" height="450px">
                         <div class="chat-box">
-                            <div class="chat">
-
-                                <div class="msg blue">Hi Durriya – I have questions about saving more each month to
-                                    possibly buy a home in 3-4 years.</div>
-                                <div>
-                                    <img src="./assets/Misha-small.webp" alt="Misha">
-                                    <p>Misha</p>
+                            <div class="img-position">
+                                <img src="./assets/Vacation!.png" alt="">
+                            </div>
+                            <div>
+                                <div class="img-position2">
+                                    <img src="./assets/Home_improvements.png" alt="">
                                 </div>
                             </div>
-                            <div class="chat">
-
-                                <div class="msg gray">Let's talk! I'll look at your financial profile and book a
-                                    quick sync to chat strategy.</div>
-                                <div>
-                                    <img src="./assets/Durriya-small.webp" alt="Durriya">
-                                    <p>Durriya</p>
-                                </div>
-
-                            </div>
                         </div>
-                        <div class="msg brown" id="Goal-created-chat"
-                            style="text-align: left; display: flex; width: 20em; align-items: center;"><img
-                                src="./assets/Durriya-small.webp" alt="chat-img" id="Durriya-img">
-                            <p id="durriya-p">New Goal Created</br>30 minutes until your session on Buying a home
-                                with Durriya</p>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
+            <div class="parent">
+                <div class="benefits">
+                    <div class="benefits-text">
+                        <h4>Invest</h4>
+                        <h2>A smarter way to start or scale your investing.</h2>
+                        <ul>
+                            <li>Portfolios built by experts, an investment approach tailored to you.
+                            </li>
+                            <li>Advice from your Fruitful Guide at every step.
+                                0% management fees.</li>
+                            <li>Ongoing progress check-ins, quick syncs, and anytime messaging.</li>
+                            <li>No investment minimums - start with as little as $1.</li>
+                        </ul>
+                        <button class="btn btn-success mt-5 px-5 py-2">Tell me more</button>
+                    </div>
+                    <div class="benefits-card-img3" style="position: relative;">
+                        <img src="./assets/raquel-benefit-card-img.png"
+                            alt="Guide Image" height="400px">   
+                    </div>
+                </div>
+            </div>
+            
 
 
- -->
 
         </div>
 
@@ -1076,115 +1142,296 @@
             });
         </script>
 
-        <footer class="footer flex">
+        
+    </div>
+
+    <div class=".container">
+        <footer class="footer flex">    
             <div class="footer_container flex ">
                 <h1 class="footer_title">Your goals are ours too</h1>
                 <h6>We'll guide and Support you through all money moments and milestones</h6>
-                <button class="footer_btn">Lern More </button>
-
+                <button class="footer_btn">Learn More </button>          
+                
             </div>
-            <div class="card flex">
-                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd69dfc61feb1f03df05_Money%20Managment.png"
-                    alt="manage money better">
+            <div class="card_a one flex">
+                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd69dfc61feb1f03df05_Money%20Managment.png" alt="manage money better">
                 <h3>Manage money better</h3>
             </div>
-            <div class="card flex">
-                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd69ee9c39c64348745b_Guide.png"
-                    alt="Plan for a family">
+            <div class="card_a two flex">
+                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd69ee9c39c64348745b_Guide.png" alt="Plan for a family">
                 <h3>Plan for a family</h3>
-            </div>
-            <div class="card flex">
-                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd687409025e636f43e2_Debt%20Borrow.png"
-                    alt="Deal with debt">
+            </div><div class="card_a three flex">
+                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd687409025e636f43e2_Debt%20Borrow.png" alt="Deal with debt">
                 <h3>Deal with debt</h3>
-            </div>
-            <div class="card flex">
-                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd6904aa0cf12c948275_Investing.png"
-                    alt="Save and invest smater">
+            </div><div class="card_a four flex">
+                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd6904aa0cf12c948275_Investing.png" alt="Save and invest smater">
                 <h3>Save and invest smater</h3>
-            </div>
-            <div class="card flex">
-                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd687a38cbab5c394e6f_Check%20in.png"
-                    alt="Buy the perfect home">
+            </div><div class="card_a five flex">
+                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd687a38cbab5c394e6f_Check%20in.png" alt="Buy the perfect home">
                 <h3>Buy the perfect home</h3>
-            </div>
-            <div class="card flex">
-                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd687d50f32e746c1ed1_Discovery.png"
-                    alt="Go on the dream vacations">
+            </div><div class="card_a six flex">
+                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd687d50f32e746c1ed1_Discovery.png" alt="Go on the dream vacations">
                 <h3>Go on the dream vacations</h3>
             </div>
-            <div class="card flex">
-                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd6c52374cbfb0255664_Welcome.png"
-                    alt="Eliminate money stress">
+            <div class="card_a seven flex">
+                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8bd6c52374cbfb0255664_Welcome.png" alt="Eliminate money stress">
                 <h3>Eliminate money stress</h3>
             </div>
-            <div class="card flex">
-                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8be000bcb6657bfefe727_02.png"
-                    alt="Change job for career">
+            <div class="card_a eight flex">
+                <img src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65d8be000bcb6657bfefe727_02.png" alt="Change job for career">
                 <h3>Change job for career</h3>
-
+                
             </div>
-
+    
         </footer>
-
-        <div class="asked_que flex">
-            <p>Frequently asked questions</p>
-            <div class="que_sec flex">
-                <h2>What is Fruitfull?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
+    
+        <h1 class="f_title">Frequently asked Questions</h1>
+    
+        <div class="accordion flex class" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item class_item_a " >
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button style="border-top-left-radius: 15px; border-top-right-radius: 15px;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    What is FinanceFlow?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    FinanceFlow is a financial wellness membership that provides access to: <br>
+    
+                    1. Expert advice and support from a dedicated FinanceFlow Guide, who is a CERTIFIED FINANCIAL PLANNER™ Professional that helps with all aspects of your finances. <br>
+                    
+                    2. A 5.00% APY High Yield Savings Account, more than 10x national average  <br>
+                    
+                    3. Tailored investment portfolios with expert support at every step and no management fees. <br>
+                    
+                    The combo of these 3 core benefits allows our members to organize and optimize their finances in a way that’s simple, smart, stress-free, and sustainable. Members can improve their finances, make real progress toward goals, and eliminate stress. That sounds nice!  <br>
+                    
+                    *Rates according to FDIC Monthly Rate Cap Information as of July 18, 2024.
+                    
+                    
+                </div>
+              </div>
             </div>
-            <div class="que_sec flex">
-                <h2>Why is it good?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
+            <div class="accordion-item class_item_a">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Why is it good?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    Thinking about money can be stressful and confusing. It’s all too common to have looming anxiety about your finances, feel overwhelmed, or be unsure about how to make progress toward your goals. Our all-encompassing membership makes managing your money easy, effective, and empowering. That means providing a real expert human to support and advise you at every turn. That means creating a blueprint with easy-to-implement steps. That means simpler, smarter ways to save and invest that support your personal goals. And that means doing it all at a transparent, more affordable cost.
+                </div>
+              </div>
             </div>
-            <div class="que_sec flex">
-                <h2>Do I need to be a Fruitful Member to access all member benefits?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
+            <div class="accordion-item class_item_a">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Do I need to be a FinanceFlow Member to access all member benefits?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    Yes, an active FinanceFlow Membership is required to work with a FinanceFlow Guide as well as open and maintain a high yield savings account and investment management account(s). Handling your finances should be simple and seamless, so our membership provides complementary services and tools that help members unlock real progress at a great value. Also, there are no additional fees or costs beyond your subscription.
+                </div>
+              </div>
             </div>
-            <div class="que_sec flex">
-                <h2>How do I connect with my Guide?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-            <div class="que_sec flex">
-                <h2>What credentials do Fruitful Guides have?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-            <div class="que_sec flex">
-                <h2>What can Fruitful Guides help me with?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-            <div class="que_sec flex">
-                <h2>Can I change my Fruitful Guide?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-            <div class="que_sec flex">
-                <h2>How much does Fruitful cost?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-            <div class="que_sec flex">
-                <h2>How does that compare to the cost at other financial companies?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-            <div class="que_sec flex">
-                <h2>Why can I trust Fruitful with my money?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-            <div class="que_sec flex">
-                <h2>How do I start?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-            <div class="que_sec flex">
-                <h2>What if I’m not sure Fruitful is the right fit for me?
+            <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                    How do I connect with my Guide?
+                  </button>
                 </h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-
-            <div class="que_sec flex">
-                <h2>As a member, how can I reach support?</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
-            </div>
-
-        </div>
+                <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    We’ll set-up and work through 1-to-1 video sessions focused on organizing your finances, setting goals, building wealth, and making real progress. Once we’ve built a strong foundation, we’ll help you keep growing while adapting to whatever life throws your way by providing ongoing advice and support through regular progress check-ins, quick syncs, and anytime messaging. Feel supported at every stage of your journey, wherever it leads
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                    What credentials do FinanceFlow Guides have?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfive">
+                  <div class="accordion-body">
+                    All FinanceFlow Guides are CERTIFIED FINANCIAL PLANNER™ Professionals, the highest level of credibility in personal finance. This means all Guides have met intensive education, training and ethical standards, are equipped to help Members with all aspects of their finances in a capable and trustworthy way, and are required to act as fiduciaries for Members. Guides are additionally registered as investment adviser representatives with FinanceFlow, an SEC-registered investment adviser.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
+                    What can FinanceFlow Guides help me with?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsix">
+                  <div class="accordion-body">
+                    Any part of your life that involves money. Our Guides provide support and advice on each aspect of members' financial worlds while considering all aspects - from managing monthly finances and getting organized to saving and investing, from buying a home to negotiating compensation and choosing benefits, from strategizing around taxes to starting a family and combining finances, and from retirement to insurance and legacy planning.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingseven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="false" aria-controls="panelsStayOpen-collapseseven">
+                    Can I change my FinanceFlow Guide?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingseven">
+                  <div class="accordion-body">
+                    Yes, you can change your FinanceFlow Guide at any time, for any reason. We’re committed to your success, and we'll make sure we find the right Guide for you.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingeight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseeight" aria-expanded="false" aria-controls="panelsStayOpen-collapseeight">
+                    How much does FinanceFlow cost?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseeight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingeight">
+                  <div class="accordion-body">
+                    Our pricing is simple and transparent — $92 per month with a quarterly membership and discounts at longer durations. That’s less than half of the cost of traditional advisory firms.² FinanceFlow members also get access to unique benefits like 5.00% APY on savings and tailored investment portfolios with no management fees and no minimums. We never try to sell financial products to members and our pricing doesn’t change based on your financial profile or complexity. There are no setup or onboarding fees to become a member.
+                    ‍2Cost of traditional advisory firms sourced from <u> The Kitces Report, Volume 2, 2022, Figure 61. Distribution Of Typical Annual Retainer Fee.</u>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingnine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsenine" aria-expanded="false" aria-controls="panelsStayOpen-collapsenine">
+                    How does that compare to the cost at other financial companies?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapsenine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingnine">
+                  <div class="accordion-body">
+                    On average, financial planning services cost $250 an hour or about $3,000 per year. Investment managers typically charge 1% on assets managed at a minimum of $250,000.²
+    
+    ‍
+    
+                        ‍2Cost of traditional advisory firms sourced from The <u> Kitces Report, Volume 2, 2022, Figure 61. Distribution Of Typical Annual Retainer Fee.</u>
+                    </div>  
+                </div>
+              </div>
+              <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingten">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseten" aria-expanded="false" aria-controls="panelsStayOpen-collapseten">
+                    Why can I trust FinanceFlow with my money?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseten" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingten">
+                  <div class="accordion-body">
+                    FinanceFlow is an investment adviser registered with the U.S. Securities & Exchange Commission (“SEC”) that employs full-time Financial Guides, all of whom are investment adviser representatives registered with the SEC and CERTIFIED FINANCIAL PLANNER™ Professionals. Our Financial Guides have previously worked at top advisory firms like Morgan Stanley, Fidelity, and Merrill Lynch.
+    
+    ‍
+    
+                        Investments in members' accounts are held at and cleared by APEX Clearing Corporation, member FINRA/SIPC, who custodies over $120 billion in total assets as of June 2023. High Yield Savings Accounts and deposits are held at Emigrant Bank, Member FDIC and founded in 1850. Learn more about FinanceFlow in our Legal Documents.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingeleven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseeleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseeleven">
+                    How do I start?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseeleven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingeleven">
+                  <div class="accordion-body">
+                    Choose your Guide, sign-up to become a FinanceFlow Member (try it risk-free for 30 days), and schedule your 1st session. Tell us about you. Hear about us. Your financial wellness journey just started.
+    
+    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingtwelve">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapsetwelve">
+                    What if I’m not sure FinanceFlow is the right fit for me?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapsetwelve" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingtwelve">
+                  <div class="accordion-body">
+                    Good news - your FinanceFlow membership is risk-free for the first 30 days. We’re confident you’ll feel better and do better in no time. But if you decide it’s not a great a fit for you, you can cancel your membership in the first month and get a full refund—guaranteed.
+    
+    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item class_item_a">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTHIRTIEN">
+                  <button style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTHIRTIEN" aria-expanded="false" aria-controls="panelsStayOpen-collapseTHIRTIEN">
+                    As a member, how can I reach support?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTHIRTIEN" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTHIRTIEN">
+                  <div class="accordion-body">
+                    Our hospitality team provides phone and email support Monday through Friday 8 AM – 6 PM ET and 8 AM – 9 PM ET respectively. The team responds to emails within 24 hours, but usually much quicker. Members can also schedule unlimited phone or video sessions as well as message anytime with their dedicated FinanceFlow Guide.
+    
+    
+                  </div>
+                </div>
+              </div>
+    
+          </div>
+    
+          
+          <!-- <img class="side_image" src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65b2236e782495e5d89161ce_Illustration%20saving.png" alt="">
+     
+          <img class=" imageone" src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65b2236efb45aa732b8d3044_illustration-borrow%20(1).png" alt="">
+    
+          <img class=" imagetwo" src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65b2236e3cab6a01a1b2bde9_Investing%20illustration.png" alt="">
+    
+          <img class=" imagethree"  src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65b2236e38cc1d710693c797_Spending.png" alt=""> -->
+    
+    
+          <!-- -----------------------------last section----------------------------------- -->
+    
+          <div class="last_sec_container">
+                <ul class="last_sec_list">
+                    <h6>Explore FinanceFlow</h6>
+                    <li>Login</li>
+                    <li>Pricing</li>
+                    <li>Legal</li>
+                </ul>
+                <ul class="last_sec_list">
+                    <h6> Careers</h6>
+                    <li>Email</li>
+                </ul>
+                <ul class="last_sec_list">
+                    <h6> Social</h6>
+                    <li>Instagram</li>
+                    <li>LinkedIn</li>
+                    <li>TikTok </li>
+                </ul>
+                <ul class="last_sec_list">
+                    <h6>Support</h6>
+                    <li>Contact Hospitality Desk</li>
+                </ul>
+                
+          </div>
+    
+          <div class="footer_section flex">
+            <p class="footer_section_c">© FinanceFlow 2024 — All rights reserved. “FinanceFlow” refers to FinanceFlow, Inc. and its separate, affiliated subsidiaries. FinanceFlow, Inc. is an investment adviser registered with the U.S. Securities & Exchange Commission, offering investment advisory products and services exclusively to Members with an active Subscription. Learn more about FinanceFlow in our <u>Form CRS.</u> <br>
+    
+                This information is provided by FinanceFlow for educational and illustrative purposes only and is not considered an offer, solicitation of an offer, advice, or recommendation to buy, sell, or hold any security. All investing involves risk, including the risk of losing the money you invest, and past performance does not guarantee future performance. Rebalancing cannot assure a profit or protect against loss in a declining market. FinanceFlow relies on information from various sources believed to be reliable, including information from its Members, Clients, and other third parties, but cannot guarantee the accuracy or completeness of that information. <br>
+                
+                FinanceFlow is a financial technology company, not a bank. Deposit accounts provided by Emigrant Bank, Member FDIC. Funds in the bank accounts are insured     for up to $250,000 per depositor, depending on the ownership category. Interest rates are variable and subject to change at any time. These rates are current as of July 18, 2024. <br>
+                
+                ¹ The people in these videos are real FinanceFlow Members who were paid in cash for their time and participation in this series. We think that is fair. Each testimonial reflects the individual Member's experience as an advisory Client and is not intended to represent any other Member's or Client's experience. We believe in the integrity of this approach and that, outside the conflict of interest present due to compensation, no other conflicts apply to these testimonials. These Client testimonials were given in October 2023, represent the opinions of each Member at that time, and may have been edited for brevity and clarity. <br>
+                
+                ² Cost of traditional advisory firms sourced from <u> The Kitces Report, Volume 2, 2022, Figure 61. Distribution Of Typical Annual Retainer Fee. </u><br>
+                
+                *Posted to the FDIC.gov website as the average national deposit  rate on savings in  <u> the top left cell of the rate table, as of July 18, 2024.</u>  <br>
+                 
+                FinanceFlow is not affiliated with, sponsored, or endorsed by the companies listed, described, or featured on its site. Company logos or trademarks used do not imply endorsement and are the property of their respective owners.  <br>
+            </p>
+    
+          </div>
+    
+    
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+    </div>
 
 
 
@@ -1204,7 +1451,33 @@
       src="https://kit.fontawesome.com/9222c058aa.js"
       crossorigin="anonymous"
     ></script>
-
+    <script>
+        const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+        window.addEventListener("mousemove", function (e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+  
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+  
+            }, { duration: 500, fill: "forwards" });
+  
+        });
+    </script>
+    <script>
+        function handleHamburger() {
+            const menu = document.getElementById('menu');
+            if (menu.style.top === '0px') {
+                menu.style.top = '-100%';
+            } else {
+                menu.style.top = '0';
+            }
+        }
+    </script>
 </body>
 
 </html>
