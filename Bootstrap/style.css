@@ -445,6 +445,7 @@ div.container {
   transition: opacity 0.3s ease;
   object-fit: cover;
 }
+
 .hover-card-bg video {
   width: 650px;
   height: 470px;
