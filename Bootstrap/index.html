@@ -756,25 +756,93 @@
             </div>
           </main>
           <section>
-            <div id="text-section">
-              <h3>A partner and a platform that make money simple.</h3>
-              
-              <p>Take control of your finances with expert human
-              help and a single intuitive place to track it all.</p>
-            </div>
-            <div class="split-picture">
-              <img
-                src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65ce3a4b97ada5b53fdc96a9_headshot_rebecca-p-1080.webp"
-                alt=""
-                id="smile-face"
-              />
-    
-              <img
-                src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65ce3a4ba82e6ab1ccfcce2e_partner-progress-p-1080.webp"
-                alt=""
-                id="phone-img"
-              />
-            </div>
+            
+            <div class="flex-v a--center gap--small">
+                <h3 class="h-med">
+                  <div class="line">A partner and a platform that</div>
+                  <div class="line">make money simple.</div>
+                </h3>
+                <div class="p-wrap">
+                  <p class="p-med">
+                    Take control of your finances with expert human help and a single
+                    intuitive place to track it all.
+                  </p>
+                </div>
+              </div>
+      
+              <div class="hover-card__wrap">
+                <a
+                  data-video-hover=""
+                  data-cursor="Choose your Guide"
+                  href="https://my.fruitful.com/sign-up/"
+                  target="_blank"
+                  class="hover-card is--left w-inline-block"
+                >
+                  <div class="hover-card-inner">
+                    <div class="hover-card-bg">
+                      <img
+                        src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65ce3a4b97ada5b53fdc96a9_headshot_rebecca.webp"
+                        loading="lazy"
+                        alt="photo of Rebecca, smiling"
+                        class="cover-img"
+                      />
+                      <video
+                        width="100%"
+                        height="100%"
+                        loop
+                        muted
+                        playsinline
+                        class="bg-video"
+                      >
+                        <source
+                          src="https://d1pwidzl9kib4u.cloudfront.net/marketing/20240305/16x9_Low_Quality_No_Caption/20240306_Fruitfuil_Guide_Compilation_16x9_lo_nocap.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="hover-card__grad"></div>
+                    <div class="hover-card__info">
+                      <h4 class="hover-card__title">Your partner<br />in progress</h4>
+                      <div class="hover-card__p">
+                        <p class="p-reg">
+                          Our Guides are supportive and skilled CFP® Pros. Expect
+                          personalized advice that leads to quick action.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  data-cursor="Get started"
+                  href="https://my.fruitful.com/sign-up/"
+                  target="_blank"
+                  class="hover-card is--right w-inline-block"
+                >
+                  <div class="hover-card-inner">
+                    <div class="hover-card-bg">
+                      <img
+                        src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/65ce3a4ba82e6ab1ccfcce2e_partner-progress.webp"
+                        loading="lazy"
+                        alt="photo of an iPhone with the Fruitful app open"
+                        class="cover-img"
+                      />
+                    </div>
+                    <div class="hover-card__grad"></div>
+                    <div class="hover-card__info">
+                      <h4 class="hover-card__title">
+                        Your place for <br />peace of mind
+                      </h4>
+                      <div class="hover-card__p">
+                        <p class="p-reg">
+                          Talk about, track, save, and invest your money all in one
+                          place. Know where you are and love where you're going.<br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            
           </section>
     </div>  
     <div class="container-fluid guide-section ">
@@ -1383,7 +1451,33 @@
       src="https://kit.fontawesome.com/9222c058aa.js"
       crossorigin="anonymous"
     ></script>
-
+    <script>
+        const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+        window.addEventListener("mousemove", function (e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+  
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+  
+            }, { duration: 500, fill: "forwards" });
+  
+        });
+    </script>
+    <script>
+        function handleHamburger() {
+            const menu = document.getElementById('menu');
+            if (menu.style.top === '0px') {
+                menu.style.top = '-100%';
+            } else {
+                menu.style.top = '0';
+            }
+        }
+    </script>
 </body>
 
 </html>
